@@ -1,0 +1,146 @@
+/*banner*/
+
+.banner-header > h1 {
+	color: #fff;
+}
+
+/*QUIENES SOMOS*/
+
+.section-somos {
+	display: flex;
+	gap: 40px;
+	padding-bottom: 60px;
+}
+
+.section-somos > img,
+.text-somos {
+	width: 50%;
+	object-fit: cover;
+}
+
+.text-somos > h2 {
+	font-size: 2.4rem;
+}
+
+.text-somos > hr {
+	margin: 15px 0;
+}
+
+.text-somos > p {
+	margin: 20px 0;
+	font-size: 1.4rem;
+}
+
+/*MISiON VISION*/
+
+.section-mision-vision {
+	display: flex;
+	padding-bottom: 60px;
+	flex-direction: column;
+	gap: 50px;
+	background-color: var(--azulOscuro);
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-mision-vision > div {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.section-mision-vision > div > img {
+	width: 178px;
+}
+
+.text-vision > h2,
+.text-mision > h2 {
+	font-size: 2.6rem;
+	font-weight: normal;
+}
+
+.text-vision > hr,
+.text-mision > hr {
+	margin: 10px 0 25px;
+}
+
+.section-valores {
+	padding-bottom: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-valores {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.va {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 20%;
+	font-size: 2rem;
+	color: var(--azulOscuro);
+	font-weight: 700;
+}
+
+.va > img {
+	width: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1100px) {
+	/*QUIENES SOMOS*/
+	.text-somos > h2 {
+		font-size: 2.6rem;
+	}
+
+	.text-somos > p {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 860px) {
+  .text-somos > h2 {
+		font-size: 2.3rem;
+	}
+
+	.text-somos > p {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+  .section-somos{
+    flex-direction: column-reverse;
+  }
+
+  .section-somos>img, .text-somos{
+    width: 100%;
+  }
+
+  .section-mision-vision > div > img{
+    width: 130px;
+  }
+
+  .contenedor-valores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .va{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section-mision-vision > div > img{
+    display: none;
+  }
+}

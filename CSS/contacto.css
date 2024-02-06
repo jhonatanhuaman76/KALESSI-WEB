@@ -1,0 +1,199 @@
+/*banner*/
+
+.banner-header > h1 {
+	color: #000;
+}
+
+/*TITULO CONTACTO*/
+.sup-contacto {
+	padding: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-contacto {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 30px;
+	font-size: 1.5rem;
+}
+
+.title-contacto > hr {
+	width: 100%;
+	height: 1px;
+}
+
+/*FORMULARIO CONTACTO*/
+.form-contacto {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--fondo-blanco);
+}
+
+.form-datos {
+	padding: 40px;
+	width: 40%;
+	color: #fff;
+	background-color: #1b263b;
+}
+
+.form-datos > h3 {
+	font-size: 1.5rem;
+}
+
+.img-form {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.img-form > img {
+	width: 250px;
+}
+
+.datos-contacto {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.datos-contacto img {
+	width: 20px;
+}
+
+.datos-contacto a {
+	color: #fff;
+}
+
+.form-inputs {
+	width: 60%;
+	padding: 40px 65px;
+}
+
+.form-inputs h3 {
+	font-size: 1.5rem;
+}
+
+input.input-contacto {
+	border: 1px solid var(--precioTach);
+	padding: 10px 15px;
+	border-radius: 10px;
+	background-color: var(--blanco2);
+}
+
+.item-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form-inputs > form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.txt-area-contacto {
+	border: 1px solid var(--precioTach);
+	resize: none;
+	padding: 15px;
+	background-color: var(--blanco2);
+}
+
+.contenedor-btn-contacto {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.btn-form-contacto {
+	padding: 10px;
+	width: 170px;
+	font-size: 18px;
+}
+
+.iframe-ubicacion {
+	height: 600px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1100px) {
+	.sup-contacto {
+		padding: 60px 50px;
+	}
+
+	.img-form > img {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.form-contacto {
+		flex-direction: column;
+	}
+	.form-contacto > div {
+		width: 100%;
+	}
+
+	.form-datos {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			'titulo logo'
+			'datos logo';
+	}
+
+	.form-datos > h3 {
+		grid-area: titulo;
+	}
+
+	.datos-contacto {
+		grid-area: datos;
+	}
+	.img-form {
+		grid-area: logo;
+		margin: 0;
+		align-self: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.img-form > img {
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.sup-contacto {
+		padding: 60px 20px;
+	}
+
+	.form-datos,
+	.form-inputs {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.img-form > img {
+		width: 130px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.img-form > img {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.form-datos {
+    display: flex;
+    flex-direction: column;
+	}
+
+  .img-form {
+		justify-content: flex-start;
+    margin-top: 40px;
+	}
+}

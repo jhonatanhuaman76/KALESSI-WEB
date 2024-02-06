@@ -1,0 +1,65 @@
+-Inicio
+-Nosotros
+-Mujer
+-Hombre
+-Niños
+-Marca
+-Buscador
+-login/cuenta
+-carrito
+-Contacto
+-Ayuda y FAQ'S
+
+-Subelementos de filtros: Categoría, talla, descuentos, color, marca, fit, precio.
+
+Contenido de cada página:
+
+Inicio:
+-Estoy pensando en hacerlo como el diseño del topitop o hacer un hero image.
+
+Nosotros:
+-Historia
+-Mision
+-Vision
+
+
+-Mujer:
+
+
+
+-Hombre:
+
+
+
+-Niños:
+
+
+
+-Marcas:
+
+
+-Login/cuenta:
+
+
+
+-Carrito:
+-Productos que se están seleccionando o añadiendo.
+-Precio o costos de los Productos
+-Costo o precio total
+-importe de descuento
+
+
+
+-Contacto:
+-Teléfono
+-Redes Sociales
+-Correo Electrónico
+-Dirección
+
+-Formulario de contacto, para pedir informacion o ponerse en contacto con la empresa dejando sus datos.
+
+
+-Ayuda y FAQ'S:
+
+-No se hacen devoluciones pero si un cupón para otra compra.
+

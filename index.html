@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalessi</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/inicio.css">
+</head>
+
+<body id="body">
+	
+	<div id="overlay" class="overlay-slider-bar">
+
+	</div>
+
+	<div class="sup-nav">
+		<ul>
+			<li>
+				<img src="Images/imgNosotros.png" width="18px" height="16px" alt="">
+				<a class="a-line-hover" href="nosotros.html">Nosotros</a>
+			</li>
+			<li>
+				<img src="Images/imgContacto.png" width="18px" height="16px" alt="">
+				<a class="a-line-hover" href="contacto.html">Contacto</a>
+			</li>
+			<li>
+				<img src="Images/imgAyuda.png" width="18px" height="18px" alt="">
+				<a class="a-line-hover" href="#">Ayuda</a>
+			</li>
+		</ul>
+	</div>
+	<hr class="nav-hr">
+	<div class="p-nav">
+		<a href="index.html">
+			<img class="logo" src="Images/logo.png" alt="">
+		</a>
+		<ul class="enlaces">
+			<li><a class="a-nav-hover" href="mujer.html">Mujer</a></li>
+			<li><a class="a-nav-hover" href="hombre.html">Hombre</a></li>
+			<li><a class="a-nav-hover" href="marcas-categorias.html">Marcas y <br> Categorías</a></li>
+			<li><a class="a-nav-hover" href="#">Blog</a></li>
+		</ul>
+		<div class="buscador">
+			<input type="text" placeholder="Buscar productos">
+			<img src="Images/lupa.png" alt="">
+		</div>
+		<div class="botones-nav">
+			<div class="btn-cuenta cursor-pointer">
+				<a href="login.html">
+					<img src="Images/btnCuenta.png" alt="">
+				</a>
+			</div>
+			<div class="btn-carrito cursor-pointer">
+				<img src="Images/btnCarrito.png" alt="">
+			</div>
+			<div class="btn-deseos cursor-pointer">
+				<img src="Images/btnDeseos.png" alt="">
+			</div>
+		</div>
+		<div id="menu-bar" class="menu-hamburguesa">
+			<img src="Images/menu-hamburguesa.svg" alt="">
+		</div>
+	</div>
+
+	<div id="menu-ham" class="nav-hamburguesa">
+		<img id="cerrar-bar" class="cerrar" src="Images/cerrar.png" alt="">
+		<ul class="enlaces-hamburguesa">
+			<li>
+				<img src="Images/woman.png" alt="">
+				<a href="mujer.html">Mujer</a>
+			</li>
+			<li>
+				<img src="Images/man.png" alt="">
+				<a href="hombre.html">Hombre</a>
+			</li>
+			<li>
+				<img src="Images/category.png" alt="">
+				<a href="marcas-categorias.html">Marcas y Categorías</a>
+			</li>
+			<li>
+				<img src="Images/blog.png" alt="">
+				<a href="#">Blog</a>
+			</li>
+		</ul>
+		<div class="buscador-hamburguesa">
+			<input type="text" placeholder="Buscar">
+			<img src="Images/lupa.png" alt="">
+		</div>
+
+		<div class="botones-nav-hamburguesa">
+			<div class="btn-cuenta cursor-pointer">
+				<a href="login.html">
+					<img src="Images/btnCuenta.png" alt="">
+				</a>
+			</div>
+			<div class="btn-carrito cursor-pointer">
+				<img src="Images/btnCarrito.png" alt="">
+			</div>
+			<div class="btn-deseos cursor-pointer">
+				<img src="Images/btnDeseos.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<div class="slider">
+			<div class="contenedor-slider">
+				<div class="btn-slider-left">
+					<img src="Images/left-arrow.png" alt="">
+				</div>
+				<div class="texto-slider">
+					<p>Collection 2023</p>
+					<h1>NEW ARRIVALS</h1>
+					<button class="cursor-pointer">SHOP NOW</button>
+				</div>
+				<div class="btn-slider-right">
+					<img src="Images/right-arrow.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="p-section content-card-mid">
+		<div class="card-mid caja-shadow cursor-pointer" onclick="window.location.href = 'mujer.html'">
+			<div class="card-mid-img">
+				<img src="Images/mujer.png" alt="">
+			</div>
+			<div class="text-card-mid">
+				<h2>MUJER</h2>
+				<p>SHOP NOW ></p>
+			</div>
+		</div>
+		<div class="card-mid caja-shadow cursor-pointer" onclick="window.location.href = 'hombre.html'">
+			<div class="card-mid-img">
+				<img src="Images/hombre.png" alt="">
+			</div>
+			<div class="text-card-mid">
+				<h2>HOMBRE</h2>
+				<p>SHOP NOW ></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="p-section flex-section destacado">
+		<h2 class="title-section">LO MÁS DESTACADO</h2>
+		<div class="contenedor-pro">
+			<div class="card-pro caja-shadow">
+				<div class="img-pro">
+					<img src="Images/card1.png" alt="" onclick="abrirProducto(1)">
+					<img class="cursor-pointer corazon" src="Images/corazon.png" alt="">
+					<button class="cursor-pointer" href="">AÑADIR A CARRITO</button>
+				</div>
+				<div class="text-pro">
+					<p>Chaqueta negra de cuero</p>
+					<p>$/50.00</p>
+				</div>
+			</div>
+			<div class="card-pro caja-shadow">
+				<div class="img-pro">
+					<img src="Images/card2.png" alt="" onclick="abrirProducto(2)">
+					<img class="cursor-pointer corazon" src="Images/corazon.png" alt="">
+					<button class="cursor-pointer" href="">AÑADIR A CARRITO</button>
+				</div>
+				<div class="text-pro">
+					<p>Vestido largo de verano</p>
+					<p>$/35.00</p>
+				</div>
+			</div>
+			<div class="card-pro caja-shadow">
+				<div class="img-pro">
+					<img src="Images/card3.png" alt="" onclick="abrirProducto(3)">
+					<img class="cursor-pointer corazon" src="Images/corazon.png" alt="">
+					<button class="cursor-pointer" href="">AÑADIR A CARRITO</button>
+				</div>
+				<div class="text-pro">
+					<p>Sueter gigante con cinturon</p>
+					<p>$/60.00</p>
+				</div>
+			</div>
+			<div class="card-pro caja-shadow">
+				<div class="img-pro">
+					<img src="Images/card4.png" alt="" onclick="abrirProducto(4)">
+					<img class="cursor-pointer corazon" src="Images/corazon.png" alt="">
+					<button class="cursor-pointer" href="">AÑADIR A CARRITO</button>
+				</div>
+				<div class="text-pro">
+					<p>Chaqueta Jean</p>
+					<p>$/30.00</p>
+				</div>
+			</div>
+			<div class="card-pro caja-shadow">
+				<div class="img-pro">
+					<img src="Images/card5.png" alt="" onclick="abrirProducto(5)">
+					<img class="cursor-pointer corazon" src="Images/corazon.png" alt="">
+					<button class="cursor-pointer" href="">AÑADIR A CARRITO</button>
+				</div>
+				<div class="text-pro">
+					<p>Sudadera con capucha Azul</p>
+					<p>$/45.00</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="p-section flex-section">
+		<h2 class="title-section">MEJORES OFERTAS</h2>
+		<div class="contenedor-ofer">
+			<div class="ofer-cards">
+				<div class="ofer">
+					<div class="sub-ofer1">
+						<img class="caja-shadow" src="Images/ofer1-m.png" alt="">
+					</div>
+					<div class="sub-ofer2">
+						<div class="item-ofer">
+							<img class="caja-shadow" src="Images/ofer1-s.png" alt="">
+							<img class="etiqueta" src="Images/etiqueta.png" alt="">
+						</div>
+						<div class="item-ofer">
+							<img class="caja-shadow" src="Images/ofer2-s.png" alt="">
+							<img class="etiqueta" src="Images/etiqueta.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="ofer">
+					<div class="sub-ofer2">
+						<div class="item-ofer">
+							<img class="caja-shadow" src="Images/ofer3-s.png" alt="">
+							<img class="etiqueta" src="Images/etiqueta.png" alt="">
+						</div>
+						<div class="item-ofer">
+							<img class="caja-shadow" src="Images/ofer4-s.png" alt="">
+							<img class="etiqueta" src="Images/etiqueta.png" alt="">
+						</div>
+					</div>
+					<div class="sub-ofer1">
+						<img class="caja-shadow" src="Images/ofer2-m.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div>
+				<button class="btn-ver-mas cursor-pointer">Ver más ofertas ▶︎</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="p-section flex-section new">
+		<h2 class="title-section">NEW ARRIVALS</h2>
+		<div class="contenedor-new">
+			<div class="card-superior">
+				<img class="caja-shadow cursor-pointer" src="Images/card-m1.png" alt="">
+				<img class="caja-shadow cursor-pointer" src="Images/card-s1.png" alt="">
+			</div>
+			<div class="card-inferior">
+				<img class="caja-shadow cursor-pointer" src="Images/card-s2.png" alt="">
+				<img class="caja-shadow cursor-pointer" src="Images/card-m2.png" alt="">
+			</div>
+			<div class="card-superior">
+				<img class="caja-shadow cursor-pointer" src="Images/card-m3.png" alt="">
+				<img class="caja-shadow cursor-pointer" src="Images/card-s3.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="p-section flex-section blog">
+		<h2 class="title-section">NUESTRO BLOG</h2>
+		<div class="contenedor-blog">
+			<div class="card-blog caja-shadow">
+				<img src="Images/blog1.png" alt="">
+				<div class="text-blog">
+					<h3>¡Descubre la moda online que te enamorará!</h3>
+					<p>Bienvenidos a nuestro blog, donde te traemos las últimas tendencias en moda que harán que te sientas
+						elegante y a la
+						vanguardia sin salir de casa. [...]</p>
+					<a href="#">Leer Más ></a>
+				</div>
+			</div>
+			<div class="card-blog caja-shadow">
+				<img src="Images/blog2.png" alt="">
+				<div class="text-blog">
+					<h3>Cómo armar outfits únicos con nuestra tienda de ropa online</h3>
+					<p>En nuestra tienda de ropa online, te brindamos todas las herramientas necesarias para que te conviertas en
+						tu propia
+						estilista. [...]</p>
+					<a href="#">Leer Más ></a>
+				</div>
+			</div>
+			<div class="card-blog caja-shadow">
+				<img src="Images/blog3.png" alt="">
+				<div class="text-blog">
+					<h3>Estilo sin límites: Descubre nuestra tienda de ropa online</h3>
+					<p>En nuestra tienda de ropa online, hemos seleccionado cuidadosamente prendas que combinan a la perfección la
+						comodidad y
+						el estilo [...]</p>
+					<a href="#">Leer Más ></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section class="newsletter">
+			<div class="newsletter-img">
+				<img src="Images/newsletter-img.png" alt="">
+				<p>RECIBE LAS ULTIMAS NOTICIAS Y OFERTAS EXCLUSIVAS</p>
+			</div>
+			<div class="newsletter-form">
+				<form action="">
+					<p>REGISTRATE GRATIS A NUESTRO</p>
+					<h2>NEWSLETTER!</h2>
+					<input type="email" placeholder="REGISTRATE CON TU EMAIL">
+					<button class="cursor-pointer" type="submit">REGISTRARSE ▶︎</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="contenedor-footer">
+
+			<div class="fo-nosotros">
+				<h3>NOSOTROS</h3>
+				<p>En Kalessi, nuestro objetivo es brindar una experiencia de compra en línea excepcional a todos los amantes
+					de la
+					moda
+					que buscan ropa y estilos de calidad. [....]</p>
+				<a href="nosotros.html">VER MÁS ></a>
+			</div>
+
+			<div class="fo-contacto">
+				<h3>CONTÁCTANOS</h3>
+				<div class="enlaces-contacto">
+					<div class="item-fo-contacto">
+						<img src="Images/telefono.png" alt="">
+						<a class="a-line-hover" href="#">+51 123456789</a>
+					</div>
+					<div class="item-fo-contacto">
+						<img src="Images/correo.png" alt="">
+						<a class="a-line-hover" href="#">example@kalessi.com</a>
+					</div>
+					<div class="item-fo-contacto">
+						<img src="Images/ubicacion.png" alt="">
+						<a class="a-line-hover" href="#">Jr Montevideo - Lima</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="fo-servicio-cliente">
+				<h3>SERVICIO AL CLIENTE</h3>
+				<div class="enlaces-servicio-cliente">
+					<a class="a-line-hover" href="#">Preguntas frecuentes</a>
+					<a class="a-line-hover" href="#">Términos y condiciones</a>
+					<a class="a-line-hover" href="#">Política de privacidad</a>
+					<a class="a-line-hover" href="#">Cambios y devoluciones</a>
+				</div>
+			</div>
+
+			<div class="fo-redes">
+				<h3>REDES SOCIALES</h3>
+				<div class="social-media">
+					<img class="cursor-pointer" src="Images/facebook.png" alt="">
+					<img class="cursor-pointer" src="Images/instragram.png" alt="">
+					<img class="cursor-pointer" src="Images/likedin.png" alt="">
+				</div>
+			</div>
+
+			<div class="fo-pago">
+				<h3>METODOS DE PAGO</h3>
+				<div class="icons-pago">
+					<img class="cursor-pointer" src="Images/visa.png" alt="">
+					<img class="cursor-pointer" src="Images/yape.png" alt="">
+					<img class="cursor-pointer" src="Images/mastercard.png" alt="">
+				</div>
+			</div>
+
+			<div class="fo-reclamaciones cursor-pointer">
+				<img src="Images/libro-reclamaciones.png" alt="">
+			</div>
+
+		</section>
+	</footer>
+
+	<script src="JS/slider.js"></script>
+	<script src="JS/menu.js"></script>
+	<script>
+		function abrirProducto(id, des) {
+			let url = "producto.html?id=" + id;
+			window.location.href = url;
+		}
+	</script>
+</body>
+
+</html>
