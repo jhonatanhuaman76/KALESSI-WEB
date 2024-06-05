@@ -10,7 +10,7 @@
 ## Introducción
 Se elaboró una página web donde los usuarios pueden visualizar el catálogo de prendas que ofrece la tienda.
 <br />
-**Demo:** https://jhonatanhuaman76.github.io/KALESSI-WEBb/
+**Demo:** https://jhonatanhuaman76.github.io/KALESSI-WEB/
 
 ## Detalles del proyecto
 - **Editor:** Visual Studio Code
